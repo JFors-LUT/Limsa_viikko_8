@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         raha_liukuri.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                monies.setText(String.valueOf(progress*5));
+                monies.setText(String.valueOf((float)progress*5/100));
             }
 
             @Override
