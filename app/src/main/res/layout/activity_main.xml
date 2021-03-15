@@ -15,7 +15,7 @@
         android:layout_marginLeft="68dp"
         android:layout_marginTop="60dp"
         android:onClick="moneyIN"
-        android:text="Add money"
+        android:text="@string/add_money"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         android:onClick="buyBottle"
-        android:text="Buy bottle"
+        android:text="@string/buy_bottle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +39,7 @@
         android:layout_marginLeft="36dp"
         android:layout_marginTop="72dp"
         android:onClick="moneyOUT"
-        android:text="Return money"
+        android:text="@string/return_money"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
@@ -47,11 +47,11 @@
         android:id="@+id/printInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
         android:onClick="showMenu"
-        android:text="Bottle Menú"
+        android:text="@string/kuitti"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buyBottle" />
 
@@ -59,8 +59,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Automaatti limskalle"
+        android:layout_marginBottom="40dp"
+        android:text="@string/automaatti_limskalle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
