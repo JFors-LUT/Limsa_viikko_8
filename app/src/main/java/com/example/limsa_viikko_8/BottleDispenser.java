@@ -1,8 +1,12 @@
 package com.example.limsa_viikko_8;
 
+import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -31,10 +35,19 @@ public class BottleDispenser {
         return BD;
     }
 
-    public void showTiedot(TextView console) {
-
+    public void showTiedot(TextView console, Context context) {
+        String saveFile = "kuitti.txt";
+        String s = ("Kuitti ostoksestasi:\n"+"Ostettu tuote: "+last_ostos.getName() +" \nPullon koko(l): "+ last_ostos.getTilavuus() +"\n"+ "Ostoksen hinta(€): "+last_ostos.getHinta());
         if (last_ostos.getHinta() != 0) {
-
+            try {
+                OutputStreamWriter ows = new OutputStreamWriter((context.openFileOutput(saveFile, Context.MODE_PRIVATE)));
+                ows.write(s);
+                ows.close();
+            } catch (IOException e) {
+            Log.e("IO","IOvirhe");
+        } finally {
+            System.out.println("Kirjoitusoperaatio käsitelty.");
+            }
         }else{
             console.append("Tee ostos ennen kuitin tulostamista!");
         }

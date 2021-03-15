@@ -99,6 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
         public void showMenu(View v){
             console.setText("");
-            jakari.showTiedot(console);
+            jakari.showTiedot(console, context);
         }
     }
