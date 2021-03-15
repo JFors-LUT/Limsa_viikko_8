@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Limsa_viikko_8</string>
+    <string name="add_money">Add money</string>
+    <string name="buy_bottle">Buy bottle</string>
+    <string name="return_money">Return money</string>
+    <string name="kuitti">Kuitti</string>
+    <string name="automaatti_limskalle">Automaatti limskalle</string>
 </resources>
